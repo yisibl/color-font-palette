@@ -21,25 +21,17 @@
   @font-palette-values --Red {
       font-family: Rocher;
       base-palette: 0;
-      override-colors:
-          0 lch(56% 132 17),
-          1 lch(76% 132 159.026),
-          2 lch(76% 132 159.026),
-          3 lch(93% 132 94);
+      override-colors: 0 #ff296b, 1 #00d384, 2 #00d384, 3 #fdee00;
   }
   
   @font-palette-values --Blues {
       font-family: Rocher;
       base-palette: 0;
-      override-colors:
-          0 lch(16% 132 293),
-          1 lch(24% 132 293),
-          2 lch(39% 132 293),
-          3 lch(90% 132 293);
+      override-colors: 0 #002a2b, 1 #004a59, 2 #006cc0, 3 #ecf0ff;
   }
   
       .rocher {
-          font-family: Rocher;
+         font-family: Rocher;
          font-palette: --Red;
          font-palette: --Blues;
          font-size: 100px;
@@ -54,28 +46,22 @@
           1 #74F87B;
   }
   
-          @font-palette-values --Red {
+  @font-palette-values --Red {
       font-family: bungee;
       base-palette: 0;
-      override-colors:
-          0 lch(56% 132 17),
-          1 lch(76% 132 159.026);
+      override-colors: 0 #ff296b, 1 #00d384;
   }
   
   @font-palette-values --Lab {
       font-family: bungee;
       base-palette: 0;
-      override-colors:
-          0 lch(76% 132 159.026),
-          1 lch(93% 132 94);
+      override-colors: 0 #00d384, 1 #fdee00;
   }
   
   @font-palette-values --Purple {
       font-family: bungee;
       base-palette: 0;
-      override-colors:
-          0 rgb(92% 93% 96%),
-          1 lch(59% 132 0);
+      override-colors: 0 #ebedf5, 1 #ff4498;
   }
   
   body {
@@ -109,8 +95,8 @@
   }
   
   .upright {
-      writing-mode: vertical-rl;
-       text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
   
   
@@ -165,18 +151,7 @@
   @font-palette-values --Emoji {
       font-family: twemoji;
       base-palette: 0;
-      override-colors:
-      0 lch(76% 132 159),
-      1 lch(76% 132 159),
-      2 lch(76% 132 159),
-      3 lch(76% 132 159),
-      4 lch(76% 132 159),
-      5 lch(76% 132 159),
-      6 lch(76% 132 159),
-      7 lch(76% 132 159),
-      8 lch(76% 132 159),
-      9 lch(76% 132 159),
-      10 lch(76% 132 159);
+      override-colors: 0 #00d384, 1 #00d384, 2 #00d384, 3 #00d384, 4 #00d384, 5 #00d384, 6 #00d384, 7 #00d384, 8 #00d384, 9 #00d384, 10 #00d384;
   }
   
   .emoji {
@@ -188,11 +163,7 @@
   @font-palette-values --Pinks {
       font-family: Rocher;
       base-palette: 0;
-      override-colors:
-      0 lch(12% 132 332),
-      1 lch(19% 132 332),
-      2 lch(30% 132 332),
-      3 lch(93% 132 324);
+      override-colors: 0 #56004e, 1 #6e0063, 2 #970088, 3 #fff7ff;
   }
   
   .pinks {
@@ -207,18 +178,7 @@
   @font-palette-values --Cats {
       font-family: Catmoji;
       base-palette: 0;
-      override-colors:
-      0 lch(76% 132 159),
-      1 lch(76% 132 159),
-      2 lch(76% 132 159),
-      3 lch(76% 132 159),
-      4 lch(76% 132 159),
-      5 lch(76% 132 159),
-      6 lch(76% 132 159),
-      7 lch(76% 132 159),
-      8 lch(76% 132 159),
-      9 lch(76% 132 159),
-      10 lch(76% 132 159);
+      override-colors: 0 #00d384, 1 #00d384, 2 #00d384, 3 #00d384, 4 #00d384, 5 #00d384, 6 #00d384, 7 #00d384, 8 #00d384, 9 #00d384, 10 #00d384;
   }
   
   @font-face {
@@ -240,11 +200,7 @@
   @font-palette-values --Multi {
       font-family: Mibster;
       base-palette: 0;
-      override-colors:
-      0 lch(12% 132 332),
-      1 lch(19% 132 332),
-      2 lch(30% 132 332),
-      3 lch(93% 132 324);
+      override-colors: 0 #56004e, 1 #6e0063, 2 #970088, 3 #fff7ff;
   }
   
   @font-palette-values --Grays {
@@ -268,18 +224,20 @@
       font-palette: --Multi;
   }
   
-  /* @font-palette-values --Reem {
+  @font-palette-values --Reem {
       font-family: reem;
       base-palette: 0;
       override-colors:
-          0 lch(56% 132 17),
-          1 lch(76% 132 159.026);
-  } */
+          0 #ff296b,
+          1 #00d384,
+          2 yellow,
+          3 blue;
+  }
   
   .reem {
       font-family: 'reem';
       font-size: 120px;
-      /* font-palette: --Reem; */
+      font-palette: --Reem;
   }
   
   @property --color {
@@ -289,7 +247,7 @@
   }
   
   :root {
-      --color: lch(100% 132 332);
+      --color: #fff;
       --color: rgb(0,0,0);
   }
   
@@ -319,39 +277,13 @@
 @font-palette-values --Strawberry {
     font-family: Jel;
     base-palette: 0;
-    override-colors: 
-        0 lch(88% 132 353),
-        1 lch(88% 132 353),
-        2 lch(88% 132 353),
-        3 lch(68% 74 360),
-        4 lch(68% 74 360),
-        5 lch(64% 132 349),
-        6 lch(64% 132 349),
-        7 lch(64% 132 349),
-        8 lch(64% 132 349),
-        9 lch(64% 132 349),
-        10 lch(64% 132 349),
-        11 lch(68% 74 360),
-        12 lch(64% 132 349);
+    override-colors: 0 #ffdfef, 1 #ffdfef, 2 #ffdfef, 3 #ff7aaa, 4 #ff7aaa, 5 #ff67bd, 6 #ff67bd, 7 #ff67bd, 8 #ff67bd, 9 #ff67bd, 10 #ff67bd, 11 #ff7aaa, 12 #ff67bd;
 }
 
 @font-palette-values --Lime {
     font-family: Jel;
     base-palette: 0;
-    override-colors: 
-        0 lch(81% 132 145),
-        1 lch(81% 132 145),
-        2 lch(81% 132 145),
-        3 lch(81% 132 145),
-        4 lch(56% 82 159),
-        5 lch(40% 82 159),
-        6 lch(40% 102 159),
-        7 lch(40% 102 159),
-        8 lch(40% 102 159),
-        9 lch(40% 102 159),
-        10 lch(56% 102 159),
-        11 lch(76% 132 159),
-        12 lch(56% 102 159);
+    override-colors: 0 #00e564, 1 #00e564, 2 #00e564, 3 #00e564, 4 #009762, 5 #006943, 6 #006b3d, 7 #006b3d, 8 #006b3d, 9 #006b3d, 10 #00975e, 11 #00d384, 12 #00975e;
 }
 
 .jel {
@@ -385,14 +317,14 @@ button {
 }
 
 .lime-btn {
-    background-color: lch(76% 132 159);
-    border: solid 1px lch(56% 102 159);
-}
+    background-color: #00d384;
+    border: 1px solid #00975e;
+  }
 
-.strawberry-btn {
-    background-color: lch(68% 74 360);
-    border: solid 1px lch(64% 132 349);
-}
+  .strawberry-btn {
+    background-color: #ff7aaa;
+    border: 1px solid #ff67bd;
+  }
 
 @font-face {
     src: url('BradleyInitialsDJR-Regular.woff2') format("woff2");
@@ -413,8 +345,7 @@ button {
 @font-palette-values --SeafoamRemix {
     base-palette: 5;
     font-family: Bradley;
-    override-colors:
-        2 hsl(166deg 50% 32%);
+    override-colors: 2 #297a67;
 }
 
 .seafoam-remix {
@@ -448,7 +379,7 @@ button {
     override-colors:
         0 black,
         1 rgb(20,20,30),
-        2 lch(76% 132 159);
+        2 #00d384;
 }
 
 .merit-badge {
